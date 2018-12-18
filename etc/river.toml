@@ -12,6 +12,7 @@ es_addr = "127.0.0.1:9200"
 # Elasticsearch user and password, maybe set by shield, nginx, or x-pack
 es_user = ""
 es_pass = ""
+es_routine_name = "Wang"
 
 # Path to store data, like master.info, if not set or empty,
 # we must use this to support breakpoint resume syncing. 

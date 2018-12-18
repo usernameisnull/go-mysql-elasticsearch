@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"os"
 	"os/signal"
 	"runtime"
@@ -43,6 +44,7 @@ func main() {
 		println(errors.ErrorStack(err))
 		return
 	}
+	fmt.Println("==============",(*cfg).EsRoutineName)
 
 	if len(*my_addr) > 0 {
 		cfg.MyAddr = *my_addr

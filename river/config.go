@@ -44,6 +44,8 @@ type Config struct {
 	FlushBulkTime TomlDuration `toml:"flush_bulk_time"`
 
 	SkipNoPkTable bool `toml:"skip_no_pk_table"`
+
+	EsRoutineName string `toml:"es_routine_name"`   // 对es的所有的操作都带上一个固定的routine
 }
 
 // NewConfigWithFile creates a Config from file.
